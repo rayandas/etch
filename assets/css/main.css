@@ -9,7 +9,7 @@ html {
 body {
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     color: #313a3d;
     width: 100%;
     margin: 0 auto;
