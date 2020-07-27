@@ -9,7 +9,11 @@ html {
 body {
     font-size: 16px;
     font-size: 1.6rem;
+<<<<<<< HEAD
     font-family: 'Source Code Pro', monospace;
+=======
+    font-family: 'Inconsolata', monospace;
+>>>>>>> 31e4bfab739eff420f304cffce759f081b05a5e8
     color: #313a3d;
     width: 100%;
     margin: 0 auto;
