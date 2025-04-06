@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1>Talks</h1>
+  {{ range .Pages.ByDate.Reverse }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p><strong>Event:</strong> {{ .Params.event }}</p>
+      <p><strong>Date:</strong> {{ .Date.Format "Jan 2, 2006" }}</p>
+      {{ with .Params.location }}
+        <p><strong>Location:</strong> {{ . }}</p>
+      {{ end }}
+      {{ with .Params.slides }}
+        <p><a href="{{ . }}">Slides</a></p>
+      {{ end }}
+      {{ with .Params.video }}
+        <p><a href="{{ . }}">Video</a></p>
+      {{ end }}
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+{{ end }}
+
